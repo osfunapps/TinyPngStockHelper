@@ -36,6 +36,7 @@ namespace LayoutProject
 
         public static void CompressNextInput()
         {
+            if(counter == picInputs.Length) return;
             var picInputStr = FormatString(picInputs[counter]);
             //string picOutput = picInput.Insert(picInput.LastIndexOf("."), COMPRESS_SUFIX);
 
